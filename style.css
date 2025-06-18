@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 80px;
+    /* for space under fixed navbar */
+    min-height: 100vh;
+}
+
+/* Optional: for a subtle pattern overlay */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #343a40;
+    position: relative;
+}
+
+.heading::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #ffc107;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.quote-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    border: 3px solid #ffc107;
+
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.quote-text {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: end;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
