@@ -51,7 +51,7 @@ body {
 
 .quote-card .card-img {
     filter: brightness(45%);
-    height: 400px;
+    max-height: 450px;
     object-fit: cover;
 }
 
